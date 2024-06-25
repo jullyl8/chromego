@@ -1267,47 +1267,40 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
+- cipher: aes-128-cfb
+  name: The Netherlands_Rozendaal_ss_111
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
+  type: ss
 - cipher: aes-256-gcm
-  name: United States_Dallas_ss_111
-  password: RexnBgU7EV5ADxG
-  port: 7002
+  name: United States_Dallas_ss_112
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 38.68.134.9
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: South Korea_Incheon_ss_112
-  password: amazonskr05
-  port: 443
-  server: 3.39.251.119
+- cipher: aes-256-gcm
+  name: United States_Dallas_ss_113
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.68.134.9
   type: ss
-- country: DE
-  name: Germany_Frankfurt am Main_trojan_113
-  password: NNufhdmMkwIA
-  port: 14276
-  server: 3.67.13.151
-  skip-cert-verify: true
-  sni: appsvs.shop
-  type: trojan
+- cipher: aes-128-cfb
+  name: The Netherlands_Rozendaal_ss_114
+  password: shadowsocks
+  port: 443
+  server: sha.majidcttls.ggff.net
+  type: ss
   udp: true
 - cipher: aes-256-cfb
   country: JP
-  name: Japan_Tokyo_ss_114
-  password: amazonskr05
-  port: 443
-  server: 3.112.219.236
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: Japan_Tokyo_vmess_115
-  network: tcp
-  port: 41001
-  server: bgroup.node1.v.nodelist-gfwairport2.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+  name: Japan_Tokyo_ssr_115
+  obfs: tls1.2_ticket_auth
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  server: jp-am48-6.eqnode.net
+  type: ssr
 - cipher: aes-256-cfb
   country: KR
   name: South Korea_Incheon_ss_116
@@ -1315,40 +1308,45 @@ proxies:
   port: 443
   server: 54.180.251.250
   type: ss
-- country: KR
-  name: South Korea_None_trojan_117
-  password: G1qWfLpkUjYn
-  port: 14282
-  server: 13.125.39.81
-  skip-cert-verify: true
-  sni: appsvs.shop
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  country: US
-  name: United States_Miami_ss_118
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 38.110.1.105
-  type: ss
-- alterId: 64
+- alterId: 1
   cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
-  name: United States_San Jose_vmess_119
+  name: None_None_vmess_117
   network: ws
-  port: 38001
-  server: 38.11.20.79
-  servername: www.45174198.xyz
+  port: 443
+  server: hms07.xfixedfloat.cfd
+  servername: afrhms07.xfixedfloat.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
   ws-opts:
     headers:
-      HOST: www.45174198.xyz
-    path: /path/191019072927
+      HOST: afrhms07.xfixedfloat.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: Kazakhstan_Almaty_vmess_118
+  network: tcp
+  port: 2083
+  server: kz-v2ray.ipracevpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f97bdbc-eaeb-4bf9-ad7f-faad44c6f6bb
+- country: US
+  name: South Korea_Incheon_trojan_119
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node2.t.nodelist-gfwairport2.top
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: United States_None_ss_1110
   password: a-wym4ovY4Yw
@@ -1441,7 +1439,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_1119
+  name: None_None_vmess_1119
   network: ws
   port: '2052'
   server: cfcdn3.sanfencdn9.com
@@ -1885,15 +1883,15 @@ proxy-groups:
   - None_None_vmess_74
   - United States_Kansas City_vless_81
   - United States_Kansas City_tuic_91
-  - United States_Dallas_ss_111
-  - South Korea_Incheon_ss_112
-  - Germany_Frankfurt am Main_trojan_113
-  - Japan_Tokyo_ss_114
-  - Japan_Tokyo_vmess_115
+  - The Netherlands_Rozendaal_ss_111
+  - United States_Dallas_ss_112
+  - United States_Dallas_ss_113
+  - The Netherlands_Rozendaal_ss_114
+  - Japan_Tokyo_ssr_115
   - South Korea_Incheon_ss_116
-  - South Korea_None_trojan_117
-  - United States_Miami_ss_118
-  - United States_San Jose_vmess_119
+  - None_None_vmess_117
+  - Kazakhstan_Almaty_vmess_118
+  - South Korea_Incheon_trojan_119
   - United States_None_ss_1110
   - China_None_vmess_1111
   - China_None_vmess_1112
@@ -1903,7 +1901,7 @@ proxy-groups:
   - China_None_trojan_1116
   - China_None_trojan_1117
   - None_None_vmess_1118
-  - United States_None_vmess_1119
+  - None_None_vmess_1119
   - China_Haikou_vmess_1120
   - China_None_trojan_1121
   - China_None_ss_1122
@@ -2025,15 +2023,15 @@ proxy-groups:
   - None_None_vmess_74
   - United States_Kansas City_vless_81
   - United States_Kansas City_tuic_91
-  - United States_Dallas_ss_111
-  - South Korea_Incheon_ss_112
-  - Germany_Frankfurt am Main_trojan_113
-  - Japan_Tokyo_ss_114
-  - Japan_Tokyo_vmess_115
+  - The Netherlands_Rozendaal_ss_111
+  - United States_Dallas_ss_112
+  - United States_Dallas_ss_113
+  - The Netherlands_Rozendaal_ss_114
+  - Japan_Tokyo_ssr_115
   - South Korea_Incheon_ss_116
-  - South Korea_None_trojan_117
-  - United States_Miami_ss_118
-  - United States_San Jose_vmess_119
+  - None_None_vmess_117
+  - Kazakhstan_Almaty_vmess_118
+  - South Korea_Incheon_trojan_119
   - United States_None_ss_1110
   - China_None_vmess_1111
   - China_None_vmess_1112
@@ -2043,7 +2041,7 @@ proxy-groups:
   - China_None_trojan_1116
   - China_None_trojan_1117
   - None_None_vmess_1118
-  - United States_None_vmess_1119
+  - None_None_vmess_1119
   - China_Haikou_vmess_1120
   - China_None_trojan_1121
   - China_None_ss_1122
