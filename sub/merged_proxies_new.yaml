@@ -339,7 +339,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - http/1.1
-  name: None_None_trojan_1118
+  name: United States_None_trojan_1118
   network: ws
   password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   port: 443
@@ -589,7 +589,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_1144
+  name: None_None_vmess_1144
   network: ws
   port: '2083'
   server: hgtrojan.zabc.net
@@ -823,7 +823,7 @@ proxy-groups:
   - Taiwan_Chiayi City_trojan_1115
   - China_None_vmess_1116
   - China_None_vmess_1117
-  - None_None_trojan_1118
+  - United States_None_trojan_1118
   - None_None_trojan_1119
   - China_None_vmess_1120
   - United States_None_trojan_1121
@@ -849,7 +849,7 @@ proxy-groups:
   - United States_Los Angeles_trojan_1141
   - United States_Los Angeles_trojan_1142
   - United States_Los Angeles_trojan_1143
-  - United States_None_vmess_1144
+  - None_None_vmess_1144
   - Spain_None_trojan_1145
   - Spain_None_trojan_1146
   - United States_None_ss_1147
@@ -913,7 +913,7 @@ proxy-groups:
   - Taiwan_Chiayi City_trojan_1115
   - China_None_vmess_1116
   - China_None_vmess_1117
-  - None_None_trojan_1118
+  - United States_None_trojan_1118
   - None_None_trojan_1119
   - China_None_vmess_1120
   - United States_None_trojan_1121
@@ -939,7 +939,7 @@ proxy-groups:
   - United States_Los Angeles_trojan_1141
   - United States_Los Angeles_trojan_1142
   - United States_Los Angeles_trojan_1143
-  - United States_None_vmess_1144
+  - None_None_vmess_1144
   - Spain_None_trojan_1145
   - Spain_None_trojan_1146
   - United States_None_ss_1147
